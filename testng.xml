@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="legoApp.reporting.ReportingTestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/Lego">
+        <classes>
+            <class name="toDoAppTests.ProductAdditionTests">
+                <methods>
+                    <include name="testE2ETestProductAddition"/>
+                    <include name="testSearchProductAddition"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
